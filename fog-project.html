@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fog Project - Projeto</title>
+
+<style>
+    /* O mesmo CSS usado na página GLPI para manter a consistência */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { color: #222; background: #f7f7f7; }
+    header { width: 100%; background: #fff; border-bottom: 1px solid #ddd; position: fixed; top: 0; left: 0; z-index: 10; }
+    nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; padding: 15px 20px; align-items: center; }
+    nav a { text-decoration: none; color: #222; margin-left: 20px; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #0077ff; }
+    .fix-top-space { height: 80px; }
+    .hero { height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: #fff; padding: 20px; }
+    .hero img { width: 100%; max-width: 400px; height: auto; margin-bottom: 20px; border-radius: 8px; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; color: #555; max-width: 700px; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 2rem; text-align: center; margin-bottom: 30px; }
+    .card { background: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 25px; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+    .card h3 { margin-bottom: 15px; color: #0077ff; }
+    .card ul { margin-left: 20px; line-height: 1.6; }
+    footer { text-align: center; background: #222; color: #fff; padding: 20px; margin-top: 40px; }
+    .btn-voltar { display: inline-block; margin-top: 20px; padding: 10px 18px; background: #222; color: #fff; text-decoration: none; border-radius: 4px; transition: 0.3s; }
+    .btn-voltar:hover { background: #0077ff; }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Sérgio Viana</div>
+        <div class="links">
+            <a href="index.html">Início</a>
+        </div>
+    </nav>
+</header>
+
+<div class="fix-top-space"></div>
+
+<section class="hero">
+    <img src="https://via.placeholder.com/800x400?text=FOG+Project" alt="Logotipo FOG Project">
+    <h1>Fog Project</h1>
+    <p>Solução de clonagem de imagens de sistemas operativos via rede.</p>
+</section>
+
+<section>
+    <h2>Sobre o Projeto</h2>
+
+    <div class="card">
+        <h3>Descrição</h3>
+        <p>
+            O FOG Project é uma ferramenta open-source baseada em Linux que permite criar e restaurar imagens completas de discos rígidos de computadores remotamente através da rede (usando PXE boot). Este projeto focou-se na otimização do tempo de configuração de novos equipamentos no departamento de TI.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Vantagens & Implementação</h3>
+        <ul>
+            <li>Configuração de um servidor PXE para boot de rede.</li>
+            <li>Criação de "Master Images" (Imagens modelo) para implementação rápida e em massa de sistemas operativos.</li>
+            <li>Redução drástica do tempo necessário para formatar e configurar novos postos de trabalho.</li>
+            <li>Gestão remota e agendamento de tarefas de imagem.</li>
+        </ul>
+    </div>
+
+    <a href="index.html#portfolio" class="btn-voltar">Voltar ao Portefólio</a>
+
+</section>
+
+<footer>
+    © 2025 Sérgio Viana • Todos os direitos reservados
+</footer>
+
+</body>
+</html>
